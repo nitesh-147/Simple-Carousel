@@ -1,0 +1,12 @@
+<div class="container">
+  <button (click)="prev()" class="btn1"><</button>
+  <button (click)="next()" class="btn2">></button>
+  <img [src]="src" alt="Refresh">
+  <div class="dots">
+    <li (click)="set(0)" [class]="index===0?'fill':''"></li>
+    <li (click)="set(1)" [class]="index===1?'fill':''"></li>
+    <li (click)="set(2)" [class]="index===2?'fill':''"></li>
+    <li (click)="set(3)" [class]="index===3?'fill':''"></li>
+    <li (click)="set(4)" [class]="index===4?'fill':''"></li>
+  </div>
+</div>
